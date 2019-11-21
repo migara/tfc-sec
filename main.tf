@@ -1,4 +1,3 @@
-
 provider "panos" {
   hostname = "40.85.87.187"
 }
