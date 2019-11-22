@@ -9,7 +9,7 @@ security_policy_rules:
     applications          : ["any"]
     services              : ["application-default"]
     categories            : ["any"]
-    action                : "allow"
+    action                : "deny"
   - name: deny sales to eng
     source_zones          : ["sales"]
     source_addresses      : ["any"]
@@ -21,14 +21,3 @@ security_policy_rules:
     services              : ["application-default"]
     categories            : ["any"]
     action                : "deny"
-  - name: allow bizdev to eng
-    source_zones          : ["bizdev"]
-    source_addresses      : ["any"]
-    source_users          : ["any"]
-    hip_profiles          : ["any"]
-    destination_zones     : ["eng"]
-    destination_addresses : ["any"]
-    applications          : ["any"]
-    services              : ["application-default"]
-    categories            : ["any"]
-    action                : "allow"
