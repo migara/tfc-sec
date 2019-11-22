@@ -21,3 +21,4 @@ security_policy_rules:
     services              : ["application-default"]
     categories            : ["any"]
     action                : "deny"
+
