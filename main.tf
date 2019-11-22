@@ -1,7 +1,3 @@
-provider "panos" {
-  hostname = "40.85.87.187"
-}
-
 locals {
   sec_rules = yamldecode(file("./firewall_rules.yml")).security_policy_rules
 }
